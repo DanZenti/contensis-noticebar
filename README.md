@@ -1,6 +1,9 @@
 # contensis-noticebar
 A very basic notice bar for a website using Contensis content types and entries.
 
+![alt text](noticebar.png "A screenshot of the notice bar on the Zengenti website. ")
+
+
 # Instructions
 1. Copy the code from the noticebar.cshtml file to a razorview in your Contensis project.
 2. Create a new content type called 'notice'
