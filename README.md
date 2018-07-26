@@ -22,7 +22,8 @@ You'll need your own css :)
 Or something like the following:
 
 
-```.notice {
+```
+.notice {
     position:sticky;
     top:0;
     z-index:250;
@@ -74,5 +75,6 @@ Or something like the following:
   }
   .close:after {
     transform: rotate(-45deg);
-  }```
+  }
+  ```
   
