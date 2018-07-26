@@ -50,6 +50,10 @@ Or something like the following (SCSS):
     background:#35424d;
     color:$color-light;
 }
+.notice--important {
+    background:red;
+    color:$color-light;
+}
 
 
 // CSS only close button
