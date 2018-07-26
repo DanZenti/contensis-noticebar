@@ -22,7 +22,7 @@ A very basic notice bar for a website using Contensis content types and entries.
 # CSS / SASS
 You'll need your own css :)
 
-Or something like the following:
+Or something like the following (SCSS):
 
 
 ```
