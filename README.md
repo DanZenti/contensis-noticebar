@@ -6,4 +6,4 @@ A very basic notice bar for a website using Contensis content types and entries.
 2. Create a new content type called 'notice'
 3. Add the fields as shown in the image below:
 
-![alt text](screenshots/entry-fields.png "A screenshot of the notice entry fields. ")
+![alt text](notice-entry-fields.png "A screenshot of the notice entry fields. ")
