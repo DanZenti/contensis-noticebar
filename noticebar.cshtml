@@ -1,0 +1,30 @@
+@using Zengenti.Contensis.Delivery
+@using Zengenti.Data
+@using Zengenti.Search
+
+@{
+    // Create a client to allow access to the content
+    var client = ContensisClient.Create();
+
+    // Query all notice entries return by releasedate
+    var query = new Query(
+        Op.EqualTo("sys.contentTypeId", "notice"),
+        Op.EqualTo("noticeIsActive", "true"),
+        Op.EqualTo("sys.versionStatus","published")
+    );
+
+    query.OrderBy.Add("releaseDate");
+    query.PageSize = 1;
+
+    // Execute the search returning entries
+    PagedList<Entry> notices = client.Entries.Search(query);
+}
+
+@foreach(var notice in notices.Items){
+    var noticeMarkup = notice.Get("noticeMarkup");
+    var noticeCss = notice.Get("noticeType").ToLower();
+    <div class="notice notice--@noticeCss">
+        <div>@Html.Raw(noticeMarkup)</div>
+        <a href="#" class="close"></a>
+    </div>
+}
